@@ -31,6 +31,7 @@ Vue.component('eliminar-nave', require('./components/EliminarNave.vue').default)
 Vue.component('date', require('./components/Calendar.vue').default);
 
 
+
 console.log(Vue.prototype);
 
 /**

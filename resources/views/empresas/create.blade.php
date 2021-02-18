@@ -6,7 +6,7 @@
     <h2 class="text-center mb-5">Crear nueva nave</h2>
 
     <div class="row justify-content-center mb-5">
-        <div class="col-md-8">
+        <div class="col-md-10 mx-auto bg-white p-2">
            
             <form method="POST" action="{{ route('empresas.store')}}" novalidate>
 

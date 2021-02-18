@@ -2,11 +2,20 @@
 
 @section('botones')
 
-<a href="{{ route('empresas.create')}}" class="btn btn-primary mr-2 text-white">Crear Empresa</a>    
-<a href="{{ route('naves.create')}}" class="btn btn-primary mr-2 text-white">Crear Nave</a><a href="{{ route('empresas.create')}}" class="btn btn-primary mr-2 text-white">Crear Empresa</a>    
-<a href="{{ route('mantenimientos.create')}}" class="btn btn-primary mr-2 text-white">Crear Mantenimiento</a>    
-
+<ul class="main2">
+    <li><a  href="{{ route('empresas.create')}}" >Crear Empresa</a></li>
+    <li><a href="{{ route('naves.create')}}" >Crear Nave</a></li>
+    <li><a href="{{ route('mantenimientos.create')}}" >Crear Mantenimiento</a></li>
+    <li><a href="#" >Crear propiedades</a></li>
     
+</ul>
+    
+    
+   
+    
+   
+    
+
 
 @endsection
 
@@ -49,13 +58,12 @@
                             nave-id = {{$naves[$i]->id}}>
                         </eliminar-nave>
                             <a href="{{route('naves.edit', ['nave'=>$naves[$i]->id]) }}" class="btn btn-dark mr-1 btn-block mb-2">Editar</a>
-                            <a href="" class="btn btn-success mr-1 btn-block mb-2">Ver</a>
                         </td>
                      </td>
                     </tr>
                     @endfor
-                   
                </tbody>
         </table>
     </div>
+
 @endsection
